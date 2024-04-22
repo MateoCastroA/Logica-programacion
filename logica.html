@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Lógica</title>
+</head>
+<body>
+    <header>
+        <h1>Programa de ordenacion de números</h1>
+        <p>Al dar clic el programa le pedirá tres valores diferentes y se los devolverá organizados de menor a mayor</p>
+        <div>
+            <script>
+                function comparar() {
+                    let numero1 = parseInt(prompt("Escribe tú número 1 = "))
+                    let numero2 = parseInt(prompt("Escribe tú número 2 = "))
+                    let numero3 = parseInt(prompt("Escribe tú número 3 = "))
+                    
+                    if (numero1 < numero2 && numero2 < numero3) {
+                        alert("Sus números ordenados: " + numero1 + ", " + numero2 + ", " + numero3);
+                    } else if (numero1 < numero3 && numero3 < numero2) {
+                        alert("Sus números ordenados: " + numero1 + ", " + numero3 + ", " + numero2);
+                    } else if (numero2 < numero1 && numero1 < numero3) {
+                        alert("Sus números ordenados: " + numero2 + ", " + numero1 + ", " + numero3);
+                    } else if (numero2 < numero3 && numero3 < numero1) {
+                        alert("Sus números ordenados: " + numero2 + ", " + numero3 + ", " + numero1);
+                    } else if (numero3 < numero1 && numero1 < numero2) {
+                        alert("Sus números ordenados: " + numero3 + ", " + numero1 + ", " + numero2);
+                    } else if (numero3 < numero2 && numero2 < numero1) {
+                        alert("Sus números ordenados: " + numero3 + ", " + numero2 + ", " + numero1);
+                    } else if (numero1==numero2 || numero2==numero3 || numero1 ==numero3){
+                        alert("Al menos dos de sus números son iguales");
+                    } else {alert("no ingresaste uno o varios valores")
+                    }
+
+                }
+            </script>
+        </div>
+    
+        <button onclick="comparar()">Comparar</button>
+
+
+    </header>
+
+    
+</body>
+</html>
